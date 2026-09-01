@@ -1,4 +1,45 @@
-<!DOCTYPE html>
+<div class="card">
+  <h2>🤖 Habla con BuildConnect AI</h2>
+
+  <textarea id="userMessage"
+    placeholder="Ejemplo: Necesito proveedor de cemento en Miami"
+    rows="4"></textarea>
+
+  <button onclick="sendMessage()" class="btn blue">
+    Consultar IA
+  </button>
+
+  <div id="response"
+       style="margin-top:20px;padding:15px;background:#111827;border-radius:10px;">
+    La respuesta aparecerá aquí...
+  </div>
+</div>
+
+<script>
+async function sendMessage() {
+
+  const message =
+  document.getElementById("userMessage").value;
+
+  document.getElementById("response").innerHTML =
+  "Analizando solicitud...";
+
+  const response = await fetch("/api/chat", {
+    method: "POST",
+    headers: {
+      "Content-Type":"application/json"
+    },
+    body: JSON.stringify({
+      message: message
+    })
+  });
+
+  const data = await response.json();
+
+  document.getElementById("response").innerHTML =
+  data.reply;
+}
+</script><!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
