@@ -6,43 +6,144 @@
 <title>BuildConnect AI</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
 body{
-background:#0f172a;
-color:white;
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
 }
 
 header{
-padding:30px;
-text-align:center;
-background:#111827;
+    text-align:center;
+    padding:60px 20px;
 }
 
-header h1{
-font-size:3rem;
-color:#38bdf8;
+h1{
+    font-size:60px;
 }
 
-header p{
-margin-top:10px;
-color:#cbd5e1;
+.btn{
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    margin:10px;
+    cursor:pointer;
+    font-size:18px;
 }
 
-.hero{
-padding:60px 20px;
-text-align:center;
+.blue{
+    background:#2563eb;
+    color:white;
 }
 
-.hero h2{
-font-size:2.5rem;
-margin-bottom:20px;
+.green{
+    background:#16a34a;
+    color:white;
 }
 
-.hero
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:40px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border-radius:8px;
+    border:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>BuildConnect AI</h1>
+
+<p>
+AI que conecta compradores y vendedores
+de materiales de construcción 24/7
+</p>
+
+<button class="btn blue">Buscar Compradores</button>
+<button class="btn green">Buscar Proveedores</button>
+
+</header>
+
+<div class="section">
+
+<div class="card">
+
+<h2>🤖 BuildConnect AI</h2>
+
+<p>
+Asistente comercial inteligente.
+</p>
+
+<ul>
+<li>Buscar empresas</li>
+<li>Generar correos</li>
+<li>Organizar contactos</li>
+<li>Crear oportunidades</li>
+<li>Gestionar ventas</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🏗 Registrar Comprador</h2>
+
+<input placeholder="Empresa">
+<input placeholder="Contacto">
+<input placeholder="Teléfono">
+<input placeholder="Email">
+<textarea placeholder="Materiales que necesita"></textarea>
+
+</div>
+
+<div class="card">
+
+<h2>🧱 Registrar Proveedor</h2>
+
+<input placeholder="Empresa">
+<input placeholder="Contacto">
+<input placeholder="Teléfono">
+<input placeholder="Email">
+<textarea placeholder="Materiales que vende"></textarea>
+
+</div>
+
+<div class="card">
+
+<h2>💰 Oportunidades</h2>
+
+<p>No hay oportunidades registradas.</p>
+
+</div>
+
+</div>
+
+<footer>
+
+BuildConnect AI © 2026
+
+</footer>
+
+</body>
+</html>
